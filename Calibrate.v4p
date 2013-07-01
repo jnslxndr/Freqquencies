@@ -353,7 +353,7 @@
    <NODE id="10" systemname="Bounds (Spectral)" nodename="Bounds (Spectral)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input" visible="1" pintype="Input">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" pintype="Input" visible="1" values="15">
+   <PIN pinname="Bin Size" slicecount="1" pintype="Input" visible="1" values="30">
    </PIN>
    <BOUNDS type="Node" left="4455" top="8280" width="100" height="100">
    </BOUNDS>
@@ -1231,5 +1231,29 @@
    <LINK srcnodeid="4" srcpinname="Up Edge" dstnodeid="45" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4575" top="9645" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4575" top="9645" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="47" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5430" top="9225" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5430" top="9225" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="48" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
